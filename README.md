@@ -1,4 +1,4 @@
-# mongodb-express
+# express-mongodb-restful-api
 
 ## Install MongoDB
 
