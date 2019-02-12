@@ -1,0 +1,7 @@
+{
+    "mongoHost": "35.229.151.152",
+    "mongoPort": "27017",
+    "mongoDatabase": "test",
+    "mongoUser": "bitnami", 
+    "mongoPass": "GTpWSjd9BVBJ"
+}
