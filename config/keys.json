@@ -1,7 +1,7 @@
 {
-    "mongoHost": "35.229.151.152",
+    "mongoHost": "34.80.173.243",
     "mongoPort": "27017",
     "mongoDatabase": "test",
-    "mongoUser": "bitnami", 
-    "mongoPass": "GTpWSjd9BVBJ"
+    "mongoUser": "root",
+    "mongoPass": "C4VYZU1WkS2I"
 }

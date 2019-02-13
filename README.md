@@ -24,8 +24,16 @@ stop mongodb `ctrl-c`
 
 [Node 連線可參考 Google 文件](https://console.cloud.google.com/marketplace/details/bitnami-launchpad/mongodb)
 
+> 帳號密碼可到`Deploy Menager`了解
+
 - host : 外部ＩＰ
 - port : 27017(預設)
 - name : SSH Termimal `mongdb` 、 `db.getName()`
-- user : root/bitnami(預設) 參考[Bitnami Cloud](https://bitnami.com/stack/mongodb/cloud/google)
-- password : 自訂中繼資料 bitnami-base-password
+- user : root 參考[Bitnami Cloud](https://bitnami.com/stack/mongodb/cloud/google)
+- password : [Deploy Menager](https://console.cloud.google.com/dm/deployments/details/mongodb-3?project=api-project-390499854371&authuser=1)
+
+### 連線注意
+
+[Auth Fail](https://stackoverflow.com/questions/38237663/mongo-atlas-connection-authentication-failed-with-custom-databases)
+
+`mongodb://${user}:${pass}@${host}:${port}/${nconf.get('mongoDatabase')}?authSource=admin`
