@@ -27,10 +27,7 @@ console.log(uri)
 
 mongoose.connect(uri, { useNewUrlParser: true }).then(
 	() => {
-		const Cat = mongoose.model('Cat', { name: String })
-
-		const kitty = new Cat({ name: 'Zildjian' })
-		kitty.save().then(() => console.log('meow'))
+		console.log('連線成功')
 	},
 	err => {
 		console.log(err)

@@ -1,7 +1,7 @@
 {
     "mongoHost": "34.80.173.243",
     "mongoPort": "27017",
-    "mongoDatabase": "test",
+    "mongoDatabase": "quapni-test",
     "mongoUser": "root",
     "mongoPass": "C4VYZU1WkS2I"
 }
