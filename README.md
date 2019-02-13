@@ -37,3 +37,8 @@ stop mongodb `ctrl-c`
 [Auth Fail](https://stackoverflow.com/questions/38237663/mongo-atlas-connection-authentication-failed-with-custom-databases)
 
 `mongodb://${user}:${pass}@${host}:${port}/${nconf.get('mongoDatabase')}?authSource=admin`
+
+## Config
+
+自行建立 `/config/key.json`
+儲存資料庫帳密
