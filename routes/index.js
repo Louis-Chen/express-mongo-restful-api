@@ -1,8 +1,9 @@
 import express from 'express'
-import todo from './todo'
+import todo from './todos'
+import products from './products'
 
 const router = express.Router()
-
-router.use('/api/v1/todos', todo)
-
+router.get('/', (req, res) => res.send('Hello World with Express'))
+router.use('/todos', todo)
+router.use('/products', products)
 export default router
