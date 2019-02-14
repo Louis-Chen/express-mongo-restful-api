@@ -39,6 +39,28 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true })) // encode Content-Type: application/x-www-form-urlencoded
 app.use(router)
 
+/**
+ * error router
+ */
+
+app.use((req, res, next) => {
+	const error = new Error('Not found')
+	error.status = 404
+	next(error)
+})
+app.use((error, req, res, next) => {
+	res.status(error.status || 500)
+	res.json({
+		error: {
+			message: error.message
+		}
+	})
+})
+
+/**
+ * start server
+ */
+
 const PORT = process.env.PORT || 8080
 
 app.listen(PORT, () => {
